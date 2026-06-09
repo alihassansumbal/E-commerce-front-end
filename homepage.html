@@ -9,77 +9,88 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/global.css">
 </head>
 
 <body>
 
   <!-- TOP HEADER -->
   <header class="top-header">
-    <div class="logo" onclick="location.href='homepage.html'" style="cursor:pointer">
-      <div class="logo-icon">B</div>
-      Brand
-    </div>
-    <div class="search-bar">
-      <input type="text" placeholder="Search..." />
-      <select>
-        <option>All Category</option>
-        <option>Electronics</option>
-        <option>Clothing</option>
-        <option>Accessories</option>
-      </select>
-      <button>Search</button>
-    </div>
-    <div class="header-icons">
-      <span onclick="location.href='#'">
-        <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-          <circle cx="12" cy="7" r="4" />
-        </svg>
-        Profile
-      </span>
-      <span onclick="location.href='#'">
-        <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-          <polyline points="22,6 12,13 2,6" />
-        </svg>
-        Message
-      </span>
-      <span onclick="location.href='#'">
-        <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
-          <polyline points="21 8 21 21 3 21 3 8" />
-          <rect x="1" y="3" width="22" height="5" />
-          <line x1="10" y1="12" x2="14" y2="12" />
-        </svg>
-        Orders
-      </span>
-      <span onclick="location.href='cart.html'">
-        <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
-          <circle cx="9" cy="21" r="1" />
-          <circle cx="20" cy="21" r="1" />
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
-        </svg>
-        My cart
-      </span>
+    <div class="container" style="display:flex; width:100%; align-items:center;">
+      <div class="container-inner" style="display:flex; width:100%; align-items:center; justify-content:space-between; gap:24px;">
+        <div class="logo" onclick="location.href='homepage.html'" style="cursor:pointer">
+          <div class="logo-icon">B</div>
+          Brand
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+          <select title="Select category">
+            <option>All Category</option>
+            <option>Electronics</option>
+            <option>Clothing</option>
+            <option>Accessories</option>
+          </select>
+          <button>Search</button>
+        </div>
+        <div class="header-icons">
+          <span onclick="location.href='#'">
+            <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Profile
+          </span>
+          <span onclick="location.href='#'">
+            <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Message
+          </span>
+          <span onclick="location.href='#'">
+            <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
+              <polyline points="21 8 21 21 3 21 3 8" />
+              <rect x="1" y="3" width="22" height="5" />
+              <line x1="10" y1="12" x2="14" y2="12" />
+            </svg>
+            Orders
+          </span>
+          <span onclick="location.href='cart.html'">
+            <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+            </svg>
+            My cart
+          </span>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- NAV BAR -->
   <nav class="nav-bar">
-    <a href="#" class="active">☰ All category</a>
-    <a href="#">Hot offers</a>
-    <a href="#">Gift boxes</a>
-    <a href="#">Projects</a>
-    <a href="products.html">Menu item</a>
-    <a href="#">Help ▾</a>
-    <div class="nav-right">
-      <span style="font-size:16px">🇬🇧</span>
-      <select>
-        <option>English</option>
-      </select>
-      <span style="font-size:16px"></span>
-      <select>
-        <option>Ship to</option>
-      </select>
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+        <div class="nav-links-wrap" style="display:flex; align-items:center;">
+          <a href="#" class="active">☰ All category</a>
+          <a href="#">Hot offers</a>
+          <a href="#">Gift boxes</a>
+          <a href="#">Projects</a>
+          <a href="products.html">Menu item</a>
+          <a href="#">Help ▾</a>
+        </div>
+        <div class="nav-right">
+          <span style="font-size:16px">🇬🇧</span>
+          <select title="Select language">
+            <option>English</option>
+          </select>
+          <span style="font-size:16px"></span>
+          <select title="Select shipping destination">
+            <option>Ship to</option>
+          </select>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -104,14 +115,50 @@
         </div>
 
        <section class="hero-banner">
-  <div class="hero-content">
-    <div class="hero-text">
-      <p class="sub">Latest trending</p>
-      <h1>Electronic<br><span>Items</span></h1>
-      <a href="#" class="btn-hero">Learn more</a>
-    </div>
-  </div>
-</section>
+         <div class="hero-slides">
+           <!-- Slide 1 -->
+           <div class="hero-slide active" style="background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 60%, #38bdf8 100%);">
+             <div class="hero-content">
+               <div class="hero-text">
+                 <p class="sub">Latest trending</p>
+                 <h1>Electronic<br><span>Items</span></h1>
+                 <a href="#" class="btn-hero">Learn more</a>
+               </div>
+             </div>
+           </div>
+           <!-- Slide 2 -->
+           <div class="hero-slide" style="background: linear-gradient(135deg, #7c2d12 0%, #ea580c 60%, #fdba74 100%);">
+             <div class="hero-content">
+               <div class="hero-text">
+                 <p class="sub">Hot Offers</p>
+                 <h1>Fashion &amp;<br><span>Apparel</span></h1>
+                 <a href="#" class="btn-hero">Shop now</a>
+               </div>
+             </div>
+           </div>
+           <!-- Slide 3 -->
+           <div class="hero-slide" style="background: linear-gradient(135deg, #064e3b 0%, #059669 60%, #a7f3d0 100%);">
+             <div class="hero-content">
+               <div class="hero-text">
+                 <p class="sub">Limited deals</p>
+                 <h1>Home &amp;<br><span>Garden</span></h1>
+                 <a href="#" class="btn-hero">Explore</a>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <!-- Slider Controls -->
+         <button class="slider-arrow prev-arrow">&#10094;</button>
+         <button class="slider-arrow next-arrow">&#10095;</button>
+
+         <!-- Slider Dots -->
+         <div class="slider-dots">
+           <span class="slider-dot active" data-index="0"></span>
+           <span class="slider-dot" data-index="1"></span>
+           <span class="slider-dot" data-index="2"></span>
+         </div>
+       </section>
 
         <!-- Right promo cards -->
         <div class="hero-promos">
@@ -314,8 +361,8 @@
               <input type="number" placeholder="0" />
             </div>
             <div class="form-row">
-              <label>Pcs</label>
-              <select>
+              <label for="pcs-select">Pcs</label>
+              <select id="pcs-select" title="Select unit type">
                 <option>Pcs</option>
                 <option>Box</option>
                 <option>Kg</option>
@@ -608,24 +655,22 @@
             <li><a href="#">Settings</a></li>
             <li><a href="#">My Orders</a></li>
           </ul>
-        <div class="app-btns">
-
-  <!-- App Store Button -->
-  <div class="app-btn">
-    <img src="Images/Appstore.png" alt="App Store" class="store-img">
-    App Store
-  </div>
-
-  <!-- Google Play Button -->
-  <div class="app-btn">
-    <img src="Images/Googleplay.png" alt="Google Play" class="store-img">
-    Google Play
-  </div>
-
-</div>
+          <div class="app-btns">
+            <!-- App Store Button -->
+            <div class="app-btn">
+              <img src="Images/Appstore.png" alt="App Store" class="store-img">
+              App Store
+            </div>
+            <!-- Google Play Button -->
+            <div class="app-btn">
+              <img src="Images/Googleplay.png" alt="Google Play" class="store-img">
+              Google Play
+            </div>
+          </div>
+        </div>
       <div class="footer-bottom">
         <span>© 2025 Ecommerce.</span>
-        <select>
+        <select title="Select language">
           <option>English,</option>
           <option>Urdu, اردو </option>
           <option>Arabic, العربية</option>
@@ -641,7 +686,64 @@
       a.addEventListener('mouseenter', () => a.style.paddingLeft = '18px');
       a.addEventListener('mouseleave', () => a.style.paddingLeft = '14px');
     });
+
+    // Feature 1: Hero banner auto-slider
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    const prevBtn = document.querySelector('.prev-arrow');
+    const nextBtn = document.querySelector('.next-arrow');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+      if (slides.length === 0) return;
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+
+      currentSlide = (index + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(slideInterval);
+    }
+
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        startAutoSlide();
+      });
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        startAutoSlide();
+      });
+    }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', (e) => {
+        const index = parseInt(e.target.getAttribute('data-index'));
+        showSlide(index);
+        startAutoSlide();
+      });
+    });
+
+    startAutoSlide();
   </script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
