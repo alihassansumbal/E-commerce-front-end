@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <title>Brand - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <!-- TOP HEADER -->
+  <header class="top-header">
+    <div class="logo" onclick="location.href='homepage.html'" style="cursor:pointer">
+      <div class="logo-icon">B</div>
+      Brand
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+      <select>
+        <option>All Category</option>
+        <option>Electronics</option>
+        <option>Clothing</option>
+        <option>Accessories</option>
+      </select>
+      <button>Search</button>
+    </div>
+    <div class="header-icons">
+      <span onclick="location.href='#'">
+        <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        Profile
+      </span>
+      <span onclick="location.href='#'">
+        <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+        Message
+      </span>
+      <span onclick="location.href='#'">
+        <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
+          <polyline points="21 8 21 21 3 21 3 8" />
+          <rect x="1" y="3" width="22" height="5" />
+          <line x1="10" y1="12" x2="14" y2="12" />
+        </svg>
+        Orders
+      </span>
+      <span onclick="location.href='cart.html'">
+        <svg width="18" height="18" fill="none" stroke="#555" stroke-width="1.8" viewBox="0 0 24 24">
+          <circle cx="9" cy="21" r="1" />
+          <circle cx="20" cy="21" r="1" />
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+        </svg>
+        My cart
+      </span>
+    </div>
+  </header>
+
+  <!-- NAV BAR -->
+  <nav class="nav-bar">
+    <a href="#" class="active">☰ All category</a>
+    <a href="#">Hot offers</a>
+    <a href="#">Gift boxes</a>
+    <a href="#">Projects</a>
+    <a href="products.html">Menu item</a>
+    <a href="#">Help ▾</a>
+    <div class="nav-right">
+      <span style="font-size:16px">🇬🇧</span>
+      <select>
+        <option>English</option>
+      </select>
+      <span style="font-size:16px"></span>
+      <select>
+        <option>Ship to</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="hero-wrap">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Category sidebar menu -->
+        <div class="cat-menu">
+          <ul>
+            <li><a href="products.html">Automobiles</a></li>
+            <li><a href="products.html">Clothes and wear</a></li>
+            <li><a href="products.html">Home interiors</a></li>
+            <li><a href="products.html">Computer and tech</a></li>
+            <li><a href="products.html">Tools, equipments</a></li>
+            <li><a href="products.html">Sports and outdoor</a></li>
+            <li><a href="products.html">Animal and pets</a></li>
+            <li><a href="products.html">Machinery tools</a></li>
+            <li><a href="products.html">More category</a></li>
+          </ul>
+        </div>
+
+       <section class="hero-banner">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="sub">Latest trending</p>
+      <h1>Electronic<br><span>Items</span></h1>
+      <a href="#" class="btn-hero">Learn more</a>
+    </div>
+  </div>
+</section>
+
+        <!-- Right promo cards -->
+        <div class="hero-promos">
+          <div class="promo-card orange">
+            <div class="p-label">Special offer</div>
+            <div class="p-title">$28.00</div>
+            <div class="p-sub">Smart watches</div>
+            <a href="#" class="btn-promo">Shop now</a>
+          </div>
+          <div class="promo-card teal">
+            <div class="p-label">Limited deal</div>
+            <div class="p-title">$15.00</div>
+            <div class="p-sub">Laptop &amp; PC</div>
+            <a href="#" class="btn-promo">Shop now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- DEALS STRIP -->
+  <div class="deals-bg" style="margin-top:10px">
+    <div class="container">
+      <div class="deals-inner">
+        <div class="deals-label">Deals and offers</div>
+        <div class="deals-grid">
+          <div class="deal-card">
+            <img src="Images/watch.png" alt="Smart watches" />
+            <div class="dc-name">Smart watches</div>
+            <span class="dc-badge">-25%</span>
+          </div>
+          <div class="deal-card">
+            <img src="Images/laptop.png" alt="Laptops" />
+            <div class="dc-name">Laptops</div>
+            <span class="dc-badge green">-15%</span>
+          </div>
+          <div class="deal-card">
+            <img src="Images/camera.png" alt="camera" />
+            <div class="dc-name">camera</div>
+            <span class="dc-badge orange">-20%</span>
+          </div>
+          <div class="deal-card">
+            <img src="Images/headphone.png" alt="Headphones" />
+            <div class="dc-name">Headphones</div>
+            <span class="dc-badge">-30%</span>
+          </div>
+          <div class="deal-card">
+            <img src="Images/camera.png" alt="Canon cameras" />
+            <div class="dc-name">Canon cameras</div>
+            <span class="dc-badge green">-10%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY SECTIONS (3 columns) -->
+  <div class="container">
+    <div class="divider"></div>
+    <div class="cat-sections">
+
+      <!-- Home & Garden -->
+      <div class="cat-card">
+        <div class="cat-card-header">
+          <div>
+            <div class="cat-card-title">Home and garden</div>
+            <div class="cat-card-sub">Source now</div>
+          </div>
+          <a href="#" class="btn-cat">Source now</a>
+        </div>
+        <div class="cat-products-grid">
+          <div class="cat-prod">
+            <img src="Images/sofa.png" alt="Sofa" />
+            <span>Soft sofas</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/kitchen.png" alt="Kitchen" />
+            <span>Kitchen</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/smart home.png" alt="Smart homes" />
+            <span>Smart home</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/kitchen wear.png" alt="Kitchen wear" />
+            <span>Kitchen wear</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/bedroom.png" alt="Beds" />
+            <span>Bedroom</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/flowers.png" alt="Flowers" />
+            <span>Flowers</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consumer electronics -->
+      <div class="cat-card">
+        <div class="cat-card-header">
+          <div>
+            <div class="cat-card-title">Consumer electronics and gadgets</div>
+            <div class="cat-card-sub">Source now</div>
+          </div>
+          <a href="#" class="btn-cat">Source now</a>
+        </div>
+        <div class="cat-products-grid">
+          <div class="cat-prod">
+            <img src="Images/laptop.png" alt="TV" />
+            <span>Smart TV</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/headphone.png" alt="Headphones" />
+            <span>Headphones</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/camera.png" alt="Cameras" />
+            <span>Cameras</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/gaming set.png" alt="Gaming" />
+            <span>Gaming set</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/watch.png" alt="Smartwatch" />
+            <span>Smartwatch</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/phone.png" alt="Smartphones" />
+            <span>Smartphones</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fashion -->
+      <div class="cat-card">
+        <div class="cat-card-header">
+          <div>
+            <div class="cat-card-title">Fashion and apparel</div>
+            <div class="cat-card-sub">Source now</div>
+          </div>
+          <a href="#" class="btn-cat">Source now</a>
+        </div>
+        <div class="cat-products-grid">
+          <div class="cat-prod">
+            <img src="Images/jacket.png" alt="Jacket" />
+            <span>Jackets</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/jeans.png" alt="Jeans" />
+            <span>Jeans</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/bag.png" alt="Bags" />
+            <span>Bags</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/shoes.png" alt="Shoes" />
+            <span>Shoes</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/sneakers.jpg" alt="Sneakers" />
+            <span>Sneakers</span>
+          </div>
+          <div class="cat-prod">
+            <img src="Images/t shirt.png" alt="T-Shirts" />
+            <span>T-Shirts</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="divider"></div>
+  </div>
+
+  <!-- REQUEST BANNER + FORM -->
+  <div class="request-section">
+    <div class="container">
+      <div class="request-inner">
+        <div class="request-banner">
+          <div class="request-banner-bg"></div>
+          <div class="request-text">
+            <h2>An easy way to send<br />requests to all suppliers</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="#" class="btn-request">Get started</a>
+          </div>
+        </div>
+        <div class="request-form-box">
+          <h3>Send quote to suppliers</h3>
+          <div class="form-row">
+            <label>What are you looking for?</label>
+            <input type="text" placeholder="Item name" />
+          </div>
+          <div class="form-two">
+            <div class="form-row">
+              <label>Quantity</label>
+              <input type="number" placeholder="0" />
+            </div>
+            <div class="form-row">
+              <label>Pcs</label>
+              <select>
+                <option>Pcs</option>
+                <option>Box</option>
+                <option>Kg</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn-send">Send inquiry</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECOMMENDED ITEMS -->
+  <div class="rec-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recommended items</h2>
+        <a class="see-all" href="products.html">See all →</a>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="Images/casual shirts.png" alt="T-shirt" />
+          <div class="pc-name">Men casual t-shirt cotton</div>
+          <div class="pc-price">$10.30</div>
+          <div class="pc-sub">From USA</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/jacket.png" alt="Jacket" />
+          <div class="pc-name">Outdoor jacket windproof</div>
+          <div class="pc-price">$39.90</div>
+          <div class="pc-sub">From Germany</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/slim fit suit (1).jpg" alt="Suit" />
+          <div class="pc-name">Classic slim fit suit</div>
+          <div class="pc-price">$79.96</div>
+          <div class="pc-sub">From China</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/jeans.png" alt="Jeans" />
+          <div class="pc-name">Slim denim jeans blue</div>
+          <div class="pc-price">$84.00</div>
+          <div class="pc-sub">From Korea</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/bag.png" alt="Backpack" />
+          <div class="pc-name">Travel backpack 35L</div>
+          <div class="pc-price">$32.00</div>
+          <div class="pc-sub">From Germany</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/bag.png" alt="Bag" />
+          <div class="pc-name">Fashion handbag leather</div>
+          <div class="pc-price">$79.00</div>
+          <div class="pc-sub">From Italy</div>
+        </div>
+
+        <div class="product-card">
+          <img src="Images/headphone.png" alt="Headphones" />
+          <div class="pc-name">Wireless headphones BT</div>
+          <div class="pc-price">$22.10</div>
+          <div class="pc-sub">From Japan</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/watch.png" alt="Watch" />
+          <div class="pc-name">Smart watch sport GPS</div>
+          <div class="pc-price">$19.30</div>
+          <div class="pc-sub">From USA</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/ceramic shirt.png" alt="Pitcher" />
+          <div class="pc-name">Ceramic water pitcher</div>
+          <div class="pc-price">$29.00</div>
+          <div class="pc-sub">From France</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/kitchen.png" alt="Coffee" />
+          <div class="pc-name">Coffee maker machine</div>
+          <div class="pc-price">$40.00</div>
+          <div class="pc-sub">From Italy</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/sunglasses.jpg" alt="Sunglasses" />
+          <div class="pc-name">Stylish sunglasses UV</div>
+          <div class="pc-price">$67.00</div>
+          <div class="pc-sub">From Spain</div>
+        </div>
+        <div class="product-card">
+          <img src="Images/bag.png" alt="Bag" />
+          <div class="pc-name">Leather shoulder bag</div>
+          <div class="pc-price">$60.40</div>
+          <div class="pc-sub">From Italy</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OUR SERVICES -->
+  <div style="height:10px"></div>
+  <div class="services-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our extra services</h2>
+        <a class="see-all" href="#">See all →</a>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <img class="service-img" src="Images/source image 1.jpg"
+            alt="Source products" />
+          <div class="service-info">
+            <div class="s-name">Source from Industry Hubs</div>
+            <div class="s-sub">Products at factory price</div>
+          </div>
+        </div>
+        <div class="service-card">
+          <img class="service-img" src="Images/customize image 1.png"
+            alt="Customized products" />
+          <div class="service-info">
+            <div class="s-name">Customize Your Products</div>
+            <div class="s-sub">Custom designs available</div>
+          </div>
+        </div>
+        <div class="service-card">
+          <img class="service-img" src="Images/fast delivery image.png"
+            alt="Fast delivery" />
+          <div class="service-info">
+            <div class="s-name">Fast, reliable shipping</div>
+            <div class="s-sub">To your door worldwide</div>
+          </div>
+        </div>
+        <div class="service-card">
+          <img class="service-img" src="Images/monitoring image.jpg"
+            alt="Protection" />
+          <div class="service-info">
+            <div class="s-name">Product monitoring</div>
+            <div class="s-sub">Buyer protection guaranteed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUPPLIERS BY REGION -->
+<div style="height:10px"></div>
+
+<div class="suppliers-bg">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Suppliers by region</h2>
+      <a class="see-all" href="#">See all →</a>
+    </div>
+
+    <div class="suppliers-grid">
+
+      <div class="supplier-item">
+        <img src="Images/UAE.png" alt="UAE Flag" class="flag-img">
+        <div>
+          <div class="s-country">Arab Emirates</div>
+        </div>
+      </div>
+
+      <div class="supplier-item">
+        <img src="Images/AU.png" alt="Australia Flag" class="flag-img">
+        <div>
+          <div class="s-country">Australia</div>
+        </div>
+      </div>
+
+      <div class="supplier-item">
+        <img src="Images/US.png" alt="USA Flag" class="flag-img">
+        <div>
+          <div class="s-country">United States</div>
+        </div>
+      </div>
+
+      <div class="supplier-item">
+        <img src="Images/RU.png" alt="Russia Flag" class="flag-img">
+        <div>
+          <div class="s-country">Russia</div>
+        </div>
+      </div>
+
+      <div class="supplier-item">
+        <img src="Images/IT.png" alt="Italy Flag" class="flag-img">
+        <div>
+          <div class="s-country">Italy</div>
+        </div>
+      </div>
+
+      <div class="supplier-item">
+        <img src="Images/GER.png" alt="Germany Flag" class="flag-img">
+        <div>
+          <div class="s-country">Germany</div>
+        </div>
+      </div>
+
+      <div class="supplier-item">
+        <img src="Images/FR.png" alt="France Flag" class="flag-img">
+        <div>
+          <div class="s-country">France</div>
+        </div>
+      </div>
+
+      <div class="supplier-item">
+        <img src="Images/CN.png" alt="China Flag" class="flag-img">
+        <div>
+          <div class="s-country">China</div>
+        </div>
+      </div>
+
+      <div class="supplier-item">
+        <img src="Images/UK.png" alt="UK Flag" class="flag-img">
+        <div>
+          <div class="s-country">United Kingdom</div>
+        </div>
+      </div>
+
+      <div class="supplier-item">
+        <img src="Images/JAP.png" alt="Japan Flag" class="flag-img">
+        <div>
+          <div class="s-country">Japan</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <!-- NEWSLETTER -->
+  <div class="container">
+    <div class="newsletter">
+      <h3>Subscribe on our newsletter</h3>
+      <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Email" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">B</div> Brand
+          </div>
+          <p>Best information about the company goes here but now lorem ipsum is</p>
+          <div class="social-icons">
+            <a href="#">f</a>
+            <a href="#">t</a>
+            <a href="#">in</a>
+            <a href="#">yt</a>
+            <a href="#">ig</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Find store</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Partnership</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Find store</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Money Refund</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>For users</h4>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">My Orders</a></li>
+          </ul>
+        <div class="app-btns">
+
+  <!-- App Store Button -->
+  <div class="app-btn">
+    <img src="Images/Appstore.png" alt="App Store" class="store-img">
+    App Store
+  </div>
+
+  <!-- Google Play Button -->
+  <div class="app-btn">
+    <img src="Images/Googleplay.png" alt="Google Play" class="store-img">
+    Google Play
+  </div>
+
+</div>
+      <div class="footer-bottom">
+        <span>© 2025 Ecommerce.</span>
+        <select>
+          <option>English,</option>
+          <option>Urdu, اردو </option>
+          <option>Arabic, العربية</option>
+          <option>Deutsch</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple hover for cat menu
+    document.querySelectorAll('.cat-menu a').forEach(a => {
+      a.addEventListener('mouseenter', () => a.style.paddingLeft = '18px');
+      a.addEventListener('mouseleave', () => a.style.paddingLeft = '14px');
+    });
+  </script>
+</body>
+
+</html>

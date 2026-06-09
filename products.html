@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Product list- Mobile Accessory</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/products.css" />
+  </head>
+
+  <body>
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="logo" onclick="location.href='homepage.html'" style="cursor:pointer">
+        <div class="logo-icon">B</div>
+        Brand
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <select>
+          <option>All category</option>
+          <option>Electronics</option>
+          <option>Clothing</option>
+        </select>
+        <button>Search</button>
+      </div>
+      <div class="header-icons">
+        <span onclick="location.href='#'">
+          <svg
+            width="18"
+            height="18"
+            fill="none"
+            stroke="#555"
+            stroke-width="1.8"
+            viewBox="0 0 24 24"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          Profile
+        </span>
+        <span onclick="location.href='#'">
+          <svg
+            width="18"
+            height="18"
+            fill="none"
+            stroke="#555"
+            stroke-width="1.8"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Message
+        </span>
+        <span onclick="location.href='#'">
+          <svg
+            width="18"
+            height="18"
+            fill="none"
+            stroke="#555"
+            stroke-width="1.8"
+            viewBox="0 0 24 24"
+          >
+            <polyline points="21 8 21 21 3 21 3 8" />
+            <rect x="1" y="3" width="22" height="5" />
+            <line x1="10" y1="12" x2="14" y2="12" />
+          </svg>
+          Orders
+        </span>
+        <span onclick="location.href='cart.html'">
+          <svg
+            width="18"
+            height="18"
+            fill="none"
+            stroke="#555"
+            stroke-width="1.8"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path
+              d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+            />
+          </svg>
+          My cart
+        </span>
+      </div>
+    </header>
+
+    <!-- NAV BAR -->
+    <nav class="nav-bar">
+      <a href="#" class="active">☰ All category</a>
+      <a href="#">Hot offers</a>
+      <a href="#">Gift boxes</a>
+      <a href="#">Projects</a>
+      <a href="#">Menu item</a>
+      <a href="#">Help ▾</a>
+      <div class="nav-right">
+        <span style="font-size: 16px">🇬🇧</span>
+        <select
+          style="
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 12px;
+            outline: none;
+          "
+        >
+          <option>English, USD</option>
+        </select>
+        <span style="font-size: 16px">🇩🇪</span>
+        <select
+          style="
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 12px;
+            outline: none;
+          "
+        >
+          <option>Ship to</option>
+        </select>
+      </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="#">Home</a><span>›</span> <a href="#">Clothing</a
+        ><span>›</span> <a href="#">Mens wear</a><span>›</span>
+        Summer clothing
+      </div>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div class="container">
+      <div class="page-content">
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar">
+          <!-- Category -->
+          <div class="sidebar-section">
+            <div class="sidebar-title">Category</div>
+            <ul class="sidebar-list">
+              <li><a href="#" class="active">Mobile Accessory</a></li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Smartphones</a></li>
+              <li><a href="#">Modern tech</a></li>
+            </ul>
+            <span class="see-all">See all ›</span>
+          </div>
+
+          <!-- Brands -->
+          <div class="sidebar-section">
+            <div class="sidebar-title">Brands</div>
+            <ul class="check-list">
+              <li><input type="checkbox" checked /> Samsung</li>
+              <li><input type="checkbox" /> Apple</li>
+              <li><input type="checkbox" /> Huawei</li>
+              <li><input type="checkbox" /> Pocco</li>
+              <li><input type="checkbox" /> Lenovo</li>
+            </ul>
+            <span class="see-all">See all ›</span>
+          </div>
+
+          <!-- Features -->
+          <div class="sidebar-section">
+            <div class="sidebar-title">Features</div>
+            <ul class="check-list">
+              <li><input type="checkbox" /> Metallic</li>
+              <li><input type="checkbox" checked /> Plastic cover</li>
+              <li><input type="checkbox" /> 8GB Ram</li>
+              <li><input type="checkbox" /> Super power</li>
+              <li><input type="checkbox" /> Large Memory</li>
+            </ul>
+            <span class="see-all">See all ›</span>
+          </div>
+
+          <!-- Price range -->
+          <div class="sidebar-section">
+            <div class="sidebar-title">Price range</div>
+            <div class="price-range">
+              <input type="text" placeholder="Min" value="0" />
+              <input type="text" placeholder="Max" value="999" />
+            </div>
+            <input
+              type="range"
+              class="range-slider"
+              min="0"
+              max="999"
+              value="500"
+            />
+            <button class="btn-apply">Apply</button>
+          </div>
+
+          <!-- Condition -->
+          <div class="sidebar-section">
+            <div class="sidebar-title">Condition</div>
+            <ul class="radio-list">
+              <li><input type="radio" name="cond" checked /> Any</li>
+              <li><input type="radio" name="cond" /> Refurbished</li>
+              <li><input type="radio" name="cond" /> Brand new</li>
+              <li><input type="radio" name="cond" /> Old items</li>
+            </ul>
+          </div>
+
+          <!-- Ratings -->
+          <div class="sidebar-section">
+            <div class="sidebar-title">Ratings</div>
+            <ul class="rating-list">
+              <li><span class="stars">★★★★★</span></li>
+              <li>
+                <span class="stars">★★★★</span><span class="stars grey">★</span>
+              </li>
+              <li>
+                <span class="stars">★★★</span><span class="stars grey">★★</span>
+              </li>
+              <li>
+                <span class="stars">★★</span><span class="stars grey">★★★</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <div class="main-col">
+          <!-- Results bar -->
+          <div class="results-bar">
+            <div class="results-count">
+              <strong>72,911 items</strong> in Mobile accessory
+            </div>
+            <div class="results-right">
+              <label class="verified-badge">
+                <input type="checkbox" checked /> ✓ Verified only
+              </label>
+              <select class="sort-select">
+                <option>Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest</option>
+              </select>
+              <div class="view-icons">
+                <div class="view-icon active">
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="#555"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                  </svg>
+                </div>
+                <div class="view-icon">
+                  <svg
+                    width="14"
+                    height="14"
+                    fill="none"
+                    stroke="#555"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect x="3" y="3" width="7" height="7" />
+                    <rect x="14" y="3" width="7" height="7" />
+                    <rect x="3" y="14" width="7" height="7" />
+                    <rect x="14" y="14" width="7" height="7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product list -->
+          <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product-item">
+              <div class="product-img">
+                <img src="Images/phone.png" alt="Canon EOS 250D" />
+              </div>
+              <div class="product-info">
+                <h3>
+                  <a href="productdetails.html"
+                    >smart phone EOS 250D, Black 18x zoom</a
+                  >
+                </h3>
+                <div class="product-price-row">
+                  <span class="price-current">$998.00</span>
+                  <span class="price-was">$1,128.00</span>
+                </div>
+                <div class="free-shipping">✈ Free Shipping</div>
+                <div class="product-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="review-count">154 reviews</span>
+                </div>
+                <p class="product-desc">
+                  Enjoy fast performance and a stunning display with this modern
+                  smartphone built for everyday convenience. Capture clear
+                  photos, stay connected, and experience long-lasting battery
+                  life in a sleek design.
+                </p>
+                <a class="view-details" href="productdetails.html"
+                  >View details</a
+                >
+              </div>
+              <button class="wishlist-btn">♡</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item">
+              <div class="product-img">
+                <img src="Images/camera.png" alt="GoPro HERO6" />
+              </div>
+              <div class="product-info">
+                <h3>
+                  <a href="productdetails.html"
+                    >GoPro HERO6 basic version Action Camera - Black</a
+                  >
+                </h3>
+                <div class="product-price-row">
+                  <span class="price-current">$998.00</span>
+                  <span class="price-was">$1,128.00</span>
+                </div>
+                <div class="free-shipping">✈ Free Shipping</div>
+                <div class="product-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="review-count">154 reviews</span>
+                </div>
+                <p class="product-desc">
+                  Capture clear and memorable photos with this basic camera
+                  designed for simple everyday use. Lightweight and easy to
+                  handle, it is perfect for beginners, travel, and casual
+                  photography.
+                </p>
+                <a class="view-details" href="productdetails.html"
+                  >View details</a
+                >
+              </div>
+              <button class="wishlist-btn">♡</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+              <div class="product-img">
+                <img src="Images/camera.png" alt="GoPro HERO6 Blue" />
+              </div>
+              <div class="product-info">
+                <h3>
+                  <a href="productdetails.html"
+                    >GoPro HERO6 2K Action Camera - Blue</a
+                  >
+                </h3>
+                <div class="product-price-row">
+                  <span class="price-current">$998.00</span>
+                  <span class="price-was">$1,128.00</span>
+                </div>
+                <div class="free-shipping">✈ Free Shipping</div>
+                <div class="product-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="review-count">102 reviews</span>
+                </div>
+                <p class="product-desc">
+                  Record crystal-clear videos and capture sharp photos with this
+                  powerful 2K camera designed for high-quality performance. Its
+                  compact design, smooth focus, and advanced features make it
+                  perfect for everyday photography and content creation.
+                </p>
+                <a class="view-details" href="productdetails.html"
+                  >View details</a
+                >
+              </div>
+              <button class="wishlist-btn">♡</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item">
+              <div class="product-img">
+                <img src="Images/camera.png" alt="GoPro HERO6" />
+              </div>
+              <div class="product-info">
+                <h3>
+                  <a href="productdetails.html"
+                    >GoPro HERO6 4K Action Camera - Black</a
+                  >
+                </h3>
+                <div class="product-price-row">
+                  <span class="price-current">$998.00</span>
+                  <span class="price-was">$1,128.00</span>
+                </div>
+                <div class="free-shipping">✈ Free Shipping</div>
+                <div class="product-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="review-count">154 reviews</span>
+                </div>
+                <p class="product-desc">
+                  Capture every moment in stunning detail with this high-quality
+                  camera featuring sharp image resolution and advanced
+                  autofocus. Perfect for photography, travel, and video
+                  recording with a sleek and easy-to-use design.
+                </p>
+                <a class="view-details" href="productdetails.html"
+                  >View details</a
+                >
+              </div>
+              <button class="wishlist-btn">♡</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-item">
+              <div class="product-img">
+                <img src="Images/watch.png" alt="GoPro HERO6 Black" />
+              </div>
+              <div class="product-info">
+                <h3>
+                  <a href="productdetails.html"
+                    >Smart watch MI version 6 - White</a
+                  >
+                </h3>
+                <div class="product-price-row">
+                  <span class="price-current">$998.00</span>
+                  <span class="price-was">$1,128.00</span>
+                </div>
+                <div class="free-shipping">✈ Free Shipping</div>
+                <div class="product-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="review-count">154 reviews</span>
+                </div>
+                <p class="product-desc">
+                  Stay connected and track your fitness with this stylish smart
+                  watch featuring heart rate monitoring, notifications, and long
+                  battery life. Designed for everyday comfort with a modern look
+                  perfect for work, workouts, and daily activities..
+                </p>
+                <a class="view-details" href="productdetails.html"
+                  >View details</a
+                >
+              </div>
+              <button class="wishlist-btn">♡</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-item">
+              <div class="product-img">
+                <img src="Images/headphone.png" alt="GoPro HERO6 4K" />
+              </div>
+              <div class="product-info">
+                <h3>
+                  <a href="productdetails.html"
+                    >version 6 headphones - blue-Black</a
+                  >
+                </h3>
+                <div class="product-price-row">
+                  <span class="price-current">$998.00</span>
+                  <span class="price-was">$1,128.00</span>
+                </div>
+                <div class="free-shipping">✈ Free Shipping</div>
+                <div class="product-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="review-count">154 reviews</span>
+                </div>
+                <p class="product-desc">
+                  Experience premium sound quality with our latest headphones,
+                  designed for comfort and performance. Enjoy deep bass,
+                  crystal-clear audio, and noise isolation for music, gaming,
+                  and calls. Lightweight design with long-lasting battery life
+                  makes them perfect for everyday use.
+                </p>
+                <a class="view-details" href="productdetails.html"
+                  >View details</a
+                >
+              </div>
+              <button class="wishlist-btn">♡</button>
+            </div>
+          </div>
+          <!-- /product-list -->
+
+          <!-- Pagination -->
+          <div class="pagination-row">
+            <div class="show-select">
+              Show:
+              <select>
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+              </select>
+            </div>
+            <div class="pages">
+              <div class="page-btn arrow">‹</div>
+              <div class="page-btn active">1</div>
+              <div class="page-btn">2</div>
+              <div class="page-btn">3</div>
+              <div class="page-btn arrow">›</div>
+            </div>
+          </div>
+        </div>
+        <!-- /main-col -->
+      </div>
+      <!-- /page-content -->
+
+      <!-- Newsletter -->
+      <div class="newsletter">
+        <h3>Subscribe on our newsletter</h3>
+        <p>
+          Get daily news on upcoming offers from many suppliers all over the
+          world
+        </p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <div class="logo-icon">B</div>
+              Brand
+            </div>
+            <p>
+              Best information about the company goes here but now lorem ipsum
+              is
+            </p>
+            <div class="social-icons">
+              <a href="#">f</a>
+              <a href="#">t</a>
+              <a href="#">in</a>
+              <a href="#">yt</a>
+              <a href="#">ig</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Find store</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Partnership</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Find store</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Money Refund</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>For users</h4>
+            <ul>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">My Orders</a></li>
+            </ul>
+            <div class="app-btns">
+              <!-- App Store -->
+              <div class="app-btn">
+                <img
+                  src="Images/Appstore.png"
+                  alt="App Store"
+                  class="store-img"
+                />
+                App Store
+              </div>
+
+              <!-- Google Play -->
+              <div class="app-btn">
+                <img
+                  src="Images/Googleplay.png"
+                  alt="Google Play"
+                  class="store-img"
+                />
+                Google Play
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 Ecommerce.</span>
+          <select>
+            <option>English,</option>
+            <option>Urdu, اردو</option>
+            <option>Arabic, العربية</option>
+            <option>Deutsch</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const productList = document.querySelector(".product-list");
+        const viewButtons = document.querySelectorAll(".view-icon");
+        const productItems = document.querySelectorAll(".product-item");
+
+        // ===== VIEW TOGGLE =====
+        viewButtons.forEach((btn, index) => {
+          btn.addEventListener("click", () => {
+            // Active button
+            viewButtons.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            // ===== GRID VIEW =====
+            if (index === 1) {
+              productList.style.display = "grid";
+              productList.style.gridTemplateColumns =
+                "repeat(auto-fit, minmax(250px, 1fr))";
+              productList.style.gap = "14px";
+
+              productItems.forEach((item) => {
+                item.style.flexDirection = "column";
+                item.style.alignItems = "center";
+                item.style.textAlign = "center";
+
+                const img = item.querySelector(".product-img");
+                const info = item.querySelector(".product-info");
+
+                if (img) {
+                  img.style.width = "100%";
+                  img.style.height = "220px";
+                }
+
+                if (info) {
+                  info.style.width = "100%";
+                }
+              });
+            }
+
+            // ===== LIST VIEW =====
+            else {
+              productList.style.display = "flex";
+              productList.style.flexDirection = "column";
+              productList.style.gap = "10px";
+
+              productItems.forEach((item) => {
+                item.style.flexDirection = "row";
+                item.style.alignItems = "flex-start";
+                item.style.textAlign = "left";
+
+                const img = item.querySelector(".product-img");
+                const info = item.querySelector(".product-info");
+
+                if (img) {
+                  img.style.width = "140px";
+                  img.style.height = "140px";
+                }
+
+                if (info) {
+                  info.style.width = "auto";
+                }
+              });
+            }
+          });
+        });
+
+        // ===== PAGINATION =====
+        const pageButtons = document.querySelectorAll(".page-btn:not(.arrow)");
+
+        pageButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            pageButtons.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+          });
+        });
+
+        // ===== WISHLIST TOGGLE =====
+        const wishlistButtons = document.querySelectorAll(".wishlist-btn");
+
+        wishlistButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            if (btn.textContent.trim() === "♡") {
+              btn.textContent = "♥";
+              btn.style.color = "#e44";
+            } else {
+              btn.textContent = "♡";
+              btn.style.color = "#ccc";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
